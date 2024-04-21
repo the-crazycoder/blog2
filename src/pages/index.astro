@@ -1,0 +1,43 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Contact from "../components/contact.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Hello!</h1>
+      <p>
+        Welcome to my blog, where I frequently write about topics that interest
+        me!
+      </p>
+      <p>
+        Here you can find anything from full-stack development to IOT projects
+        with Raspberry Pis and arduinos.
+      </p>
+      If you want to quote me in your article, video or blog post, then feel free,
+      I just ask that you credit <code
+        >Thomas Mead (<a href="https://blog.thomasmead.xyz"
+          >https://blog.thomasmead.xyz</a
+        >)</code
+      >
+      <p>
+        Check out my latest blog posts, by clicking the <code>Blog</code> nav button
+        at the top or by clicking
+        <a href="/blog">here.</a>
+      </p>
+      <hr>
+      <h3>Contact me</h1>
+      <Contact />
+    </main>
+    <Footer />
+  </body>
+</html>
